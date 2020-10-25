@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="virus.png">
+  </head>
+  <body>
+    <h1><i>About the Simulator</i></h1>
+    <table>
+      <tr>
+        <td> <a href="index.html">Home</a></td>
+        <td> <a href="infected.html">Infectious Diseases</a></td>
+        <td><a href="more.html">About the Creators</a></td>
+      </tr>
+    </table>
+    </br>
+    <table class = "center">
+      <tr>
+        <td> <image src="matrix ).png"; href = "https://www.steveclarkapps.com/graphs/"; width = 400;></image></td>
+        <td><image src="matrix.png" width = 300;></image></td>
+      </tr>
+    </table>   
+    <p>Our simulator is based heavily on graph theory using matrices to model connections between a population and, in particular, the subject of graph walks. Graph walks are more commonly used to model paths that can be taken between two or more nodes in the form of a singular matrix which allows for more simplistic observation and manipulation of a data set. More recently graph theory and graph walks have been used to model the spread of viral memes and, of course, viral diseases. 
+    </br>
+    </br>
+    The above graph and adjacency matrix serve as a good example for how exactly our code works. The adjacency matrix is created by assigning each node, or person in the case of the simulator, a number and the numbers in the row and columns tell us whether there is a way to get from node A to node B using a walk of one. The matrix is diagonally symmetric as in our case if there is a connection between person A and B there is likewise one between B and A. This mathematical representation of connections becomes incredibly useful when modeling connections. 
+    </br>
+    </br>
+    Our simulator in particular works by generating a randomized symmetrical adjacency matrix for the number of nodes or people inputted by the user (population size). We randomly pick out the infected individuals and check who they had contact with during the first round. When we find the people that had contact with the infected, we use the chance of spread input to calculate whether the disease spreads. Using the results from our model, we output the number of individuals infected and can rerun the simulation for further rounds, removing the columns and rows of those initially infected at the start of the previous round before summing the newly infected. At the end of these simulations the infected are summed once more and we use the mortality rate inputted to calculate the death toll. 
+    </br>
+    </br>
+    Of course, our simulation is far from being perfect. It is incapable of accounting for a variety of factors stemming from time proceeding while the simulation remains static. We are unable to fully account for infected individuals dying before they contact anyone, an individual remaining infected in the rounds that follow the first or new connections being formed over time, as well as doubtless other factors we have yet to think of. The nature of our simulation makes it difficult for more complex adjustments to be made to the matrix without jeopardizing the integrity of the simulation with human intervention. Additionally, the software we used makes it difficult to calculate spread for large populations in a timely manner, often resulting in the simulator timing out or crashing. Despite this, we believe our simulator provides an elegant, albeit simplistic, representation for the spread of disease among smaller populations.        
+    </p>
+  </body>
+</html>
