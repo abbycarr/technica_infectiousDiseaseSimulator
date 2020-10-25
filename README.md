@@ -3,6 +3,7 @@ A simulator that utilizes graph theory and python code to document the spread of
 
 ### How to Run Our Project
 1. Click on the link: (https://Infectious-Disease-Simulator-2020.spiritjacb.repl.co)
+
 If you wish to look more at our code for the project, feel free to view the source files or view our submission at ().
 
 Our project was built in repl.it after initially starting in VS Code and continued to be built in two different repl.its during the process.
