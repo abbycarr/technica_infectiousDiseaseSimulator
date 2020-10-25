@@ -92,6 +92,9 @@ def main():
     # create the array of infected people's indexs
     whomst = random.sample(range(0, size_pop), inf_pop)
 
+    # print initial infection
+    print("Initially Infected:",inf_pop)
+
     # iterate over the number of rounds the user 
     # wishes to spread with
     for x in range(0,rounds):
@@ -180,10 +183,13 @@ def main():
             for w in range(0,len(whomst)):
                 if (new_whomst[h] >= whomst[w]):
                     new_whomst[h] = new_whomst[h] - 1
-        
+
         # set the list of infected individual indexes to the newly
         # infected individuals
         whomst = new_whomst
+
+        # print round results
+        print("People Infected in Round ",x+1,": ",len(new_whomst),sep="")
     
     Num_dead = math.floor(inf_pop * dead_per / 100)
 
